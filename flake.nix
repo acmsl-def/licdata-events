@@ -40,8 +40,8 @@
       let
         org = "acmsl";
         repo = "licdata-events";
-        version = "0.0.1";
-        sha256 = "0xf0ljdi1hl8w6k40f8bg2db1f9192gwamjnsh3ddk3jjb980kcs";
+        version = "0.0.2";
+        sha256 = "0g34jlj21b0pjlz0rqy1sjn1103a7glsyj3p6im87ywxavsbam7q";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.licdata.events";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
