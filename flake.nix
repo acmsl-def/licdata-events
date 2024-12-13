@@ -24,14 +24,14 @@
     pythoneda-shared-pythonlang-banner = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.72";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.74";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.94";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.101";
     };
   };
   outputs = inputs:
@@ -79,7 +79,6 @@
               desc = description;
               inherit homepage pname pythonMajorMinorVersion package
                 version;
-              package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
               pythonedaSharedPythonlangDomain =
                 pythoneda-shared-pythonlang-domain.version;
               src = pyprojectTomlTemplate;
