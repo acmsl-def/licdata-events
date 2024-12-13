@@ -31,7 +31,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.101";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.102";
     };
   };
   outputs = inputs:
