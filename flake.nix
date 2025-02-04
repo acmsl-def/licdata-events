@@ -31,7 +31,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.126";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.128";
     };
   };
   outputs = inputs:
@@ -40,8 +40,8 @@
       let
         org = "acmsl";
         repo = "licdata-events";
-        version = "0.0.4";
-        sha256 = "1vm8gvsr829pqzbsvsjgbzlmnl4lm2cwiz8rbp3l219fzn2y3wcx";
+        version = "0.0.7";
+        sha256 = "0qgl5kjw9a0inmj7ysjwb6aj2nzw6ghxxz5gx9l6x9xmjjnx4lfq";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.licdata.events";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
