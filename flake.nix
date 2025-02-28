@@ -24,14 +24,14 @@
     pythoneda-shared-pythonlang-banner = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.83";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.85";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.129";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.131";
     };
   };
   outputs = inputs:
@@ -40,8 +40,8 @@
       let
         org = "acmsl";
         repo = "licdata-events";
-        version = "0.0.8";
-        sha256 = "1zxjqj4hwkfbdpjag2hib7pras5f1a0y3fdp9rj269h4mm12pwj0";
+        version = "0.0.9";
+        sha256 = "1kzzzxi3470q50z4azchvv7a5gk6mhybd6a7badxp2mygi6hszc3";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.licdata.events";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
